@@ -1,22 +1,22 @@
 
-from templates import agent_templates
-from visual_generator import generate_avatar_card
 import zipfile
 import io
+import visual_generator
+import templates
 
 def build_agent_profile(agent):
     files = {}
 
     if agent["include_prompt"]:
-        prompt = agent_templates["gpt_prompt"].format(**agent)
+        prompt = templates.agent_templates["gpt_prompt"].format(**agent)
         files["gpt_prompt.md"] = prompt
 
     if agent["include_workflow"]:
-        workflow = agent_templates["workflow"].format(**agent)
+        workflow = templates.agent_templates["workflow"].format(**agent)
         files["workflow.txt"] = workflow
 
     if agent["include_visual"]:
-        image = generate_avatar_card(agent)
+        image = visual_generator.generate_avatar_card(agent)
         files["visual_card.png"] = image
 
     # Bundle into zip
