@@ -1,6 +1,6 @@
 
-from .templates import agent_templates
-from .visual_generator import generate_avatar_card
+from templates import agent_templates
+from visual_generator import generate_avatar_card
 import zipfile
 import io
 
