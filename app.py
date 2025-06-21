@@ -1,10 +1,8 @@
-
-
 import streamlit as st
 import os
 import sys
 
-# Adjust path so 'utils' modules can be found
+# Add utils directory to path
 sys.path.append(os.path.join(os.path.dirname(__file__), "utils"))
 
 from builder import build_agent_profile
