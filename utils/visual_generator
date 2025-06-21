@@ -13,7 +13,6 @@ def generate_avatar_card(agent):
     draw.text((20, 80), role_text, fill=(200, 200, 200))
     draw.text((20, 140), style_text, fill=(180, 180, 180))
 
-    # Save to bytes
     byte_io = io.BytesIO()
     img.save(byte_io, format='PNG')
     byte_io.seek(0)
