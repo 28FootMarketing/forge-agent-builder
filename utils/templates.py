@@ -22,3 +22,6 @@ Start → Intake Form → Tag Contact → Trigger Email/SMS Sequence
 This automation logic is ready to port into GoHighLevel or any CRM.
 """
 }
+This automation logic is ready to port into GoHighLevel or any CRM.
+"""
+}
